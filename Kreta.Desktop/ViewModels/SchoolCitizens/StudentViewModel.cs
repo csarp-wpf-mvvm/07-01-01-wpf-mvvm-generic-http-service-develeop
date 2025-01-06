@@ -1,12 +1,13 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using CommunityToolkit.Mvvm.Input;
-using Kreta.Desktop.Models;
 using Kreta.Desktop.Service;
 using Kreta.Desktop.ViewModels.Base;
+using Kreta.Shared.Dtos;
+using Kreta.Shared.Extensions;
 using Kreta.Shared.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Kreta.Desktop.ViewModels.SchoolCitizens
@@ -51,9 +52,9 @@ namespace Kreta.Desktop.ViewModels.SchoolCitizens
 
         public override async Task InitializeAsync()
         {
-            List<Student> students = await _studentService.SelectAllStudent();
+            List<StudentDto> studentsDto = await _studentService.GetAllAsync<StudentDto>();
+            List<Student> students= studentsDto.Select(s => s.ToStudent()).ToList();
             Students = new ObservableCollection<Student>(students);
-
         }
     }
 }

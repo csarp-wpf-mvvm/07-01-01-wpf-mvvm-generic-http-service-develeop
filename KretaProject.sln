@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kreta.Shared", "Kreta.Share
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kreta.Backend", "Kreta.Backend\Kreta.Backend.csproj", "{D1700B6E-CAFC-451D-AFA5-245CD7EDFDE9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kreta.HttpService", "Kreta.HttpService\Kreta.HttpService.csproj", "{EF192460-8D05-41A5-BD26-3CDE957A841A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D1700B6E-CAFC-451D-AFA5-245CD7EDFDE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1700B6E-CAFC-451D-AFA5-245CD7EDFDE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1700B6E-CAFC-451D-AFA5-245CD7EDFDE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF192460-8D05-41A5-BD26-3CDE957A841A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF192460-8D05-41A5-BD26-3CDE957A841A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF192460-8D05-41A5-BD26-3CDE957A841A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF192460-8D05-41A5-BD26-3CDE957A841A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
