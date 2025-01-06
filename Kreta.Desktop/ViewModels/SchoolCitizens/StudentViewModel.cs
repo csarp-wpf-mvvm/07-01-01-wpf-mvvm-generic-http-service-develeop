@@ -37,7 +37,7 @@ namespace Kreta.Desktop.ViewModels.SchoolCitizens
 
         public StudentViewModel()
         {
-            _studentService = StudentService();
+            _studentService = new StudentService();
             SelectedStudent = new Student();
             SelectedEducationLevel = _educationLevels[0];
         }

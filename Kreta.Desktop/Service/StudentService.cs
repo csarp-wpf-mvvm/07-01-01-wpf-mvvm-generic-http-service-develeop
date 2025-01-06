@@ -10,6 +10,10 @@ namespace Kreta.Desktop.Service
     {
         private readonly HttpClient? _httpClient;
 
+        public StudentService()
+        {
+            _httpClient = new HttpClient();
+        }
         public StudentService(IHttpClientFactory? httpClientFactory)
         {
             if (httpClientFactory is not null)
